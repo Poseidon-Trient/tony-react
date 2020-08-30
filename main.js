@@ -18,8 +18,8 @@ function createElement(tagName, attributes, ...children) {
     return e;
 }
 
-window.a = <div id="a" class="c">
+document.body.appendChild(<div id="a" class="c">
     <div>abc</div>
     <div></div>
     <div></div>
-</div>
+</div>)
