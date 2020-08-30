@@ -14,8 +14,9 @@ class MyCoponent extends Component {
             <h1>iayr {this.state.a.toString()}</h1>
             {this.children}
             <button onclick={() => {
-                this.state.a++;
-                this.rerender()
+                this.setState({
+                    a: this.state.a + 1
+                })
             }}>add</button>
         </div>
     }
